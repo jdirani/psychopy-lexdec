@@ -1,0 +1,7 @@
+target,target_type,correct_ans
+cat,word,2
+chair,word,2
+can,word,2
+mspqn,non-word,1
+pcmae,non-word,1
+hgjdo,non-word,1
