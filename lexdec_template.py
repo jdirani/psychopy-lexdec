@@ -105,8 +105,7 @@ if expInfo['Run'] == 'Prac':
 
     for trial in trials_practice:
         present_fix()
-        word.setText(trial['target']) #if the target is a word
-        resp = present_word() #present target
+        resp = present_word(text=trial['target']) #present target
         win.flip()
         if resp[0][0] == trial['correct_ans']:
             present_instructions('Correct! Press to continue.')
