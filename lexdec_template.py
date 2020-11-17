@@ -68,7 +68,7 @@ def present_fix():
 # Presents a word that stays on screen until response
 def present_word(text='', trigger=None, photoDiode=True):
     word.setText(text)
-    if trigger is not None:
+    if trigger:
         win.callOnFlip(triggerBox.activate_line, bitmask=int(trigger))
     win.callOnFlip(rtClock.reset)
     word.draw()
